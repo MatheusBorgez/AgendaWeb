@@ -9,6 +9,6 @@ public class AgendaController {
     
     @RequestMapping("/ola")
     public String exibirMensagem() {
-        return "Ola mundo";
+        return "Ola mundo!";
     }
 }
