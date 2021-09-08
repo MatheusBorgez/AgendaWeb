@@ -22,7 +22,7 @@ public class AgendaController {
     @Autowired
     private IPessoaRepositorio pessoaRepositorio;
 
-    @PostMapping("/inserir")
+    @PostMapping("/save")
     public Pessoa InsiraPessoa(@RequestBody Pessoa pessoa) {
 
         return pessoaRepositorio.save(pessoa);
@@ -34,7 +34,7 @@ public class AgendaController {
         return pessoaRepositorio.findAll();
     }
 
-    @PutMapping("/alterar")
+    @PutMapping("/edit")
     public Pessoa AleterePessoa(@RequestBody Pessoa pessoa) {
         return pessoaRepositorio.save(pessoa);
     }
