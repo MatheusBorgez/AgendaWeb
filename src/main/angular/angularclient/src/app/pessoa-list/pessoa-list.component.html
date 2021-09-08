@@ -1,0 +1,23 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">E-mail</th>
+          <th scope="col">Telefone</th>
+          <th scope="col">Empresa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pessoa of pessoas">
+          <td>{{ pessoa.nome }}</td>
+          <td>{{ pessoa.email }}</td>
+          <td>{{ pessoa.telefone }}</td>
+          <td>{{ pessoa.empresa }}</td>
+          <a routerLink="/delete" class="btn btn-info">Inserir pessoa</a>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

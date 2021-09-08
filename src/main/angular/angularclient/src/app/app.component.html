@@ -1,45 +1,21 @@
 <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card bg-dark my-5">
+        <div class="card-body">
+          <h2 class="card-title text-center text-white py-3">{{ title }}</h2>
 
-  <div class="container mt-1">
+          <li class="list-inline-item">
+            <a routerLink="/list" class="btn btn-info">Listar pessoas</a>
+          </li>
 
-    <div class="row  border border-white back-grid text-white">
-      <div class="col-sm text-center">
-        Nome
+          <li class="list-inline-item">
+            <a routerLink="/save" class="btn btn-info">Inserir pessoa</a>
+          </li>
+
+        </div>
       </div>
-
-      <div class="col-sm text-center">
-        E-mail
-      </div>
-
-      <div class="col-sm text-center">
-        Telefone
-      </div>
-
-      <div class="col-sm text-center">
-        Empresa
-      </div>
-    </div>    
-  </div>
-
-  <router-outlet></router-outlet>
-
-  <div class="container col-sm mt-3">
-    <div class="row">
-      <div class="centered">
-
-        <button type="button" class="btn btn-primary btn-dark" data-toggle="modal" data-target="#modalCadastroAluno"
-          botaoAdicionar>
-          Adicionar
-        </button>
-
-        <button type="button" class="btn btn-dark" botaoEditar>
-          Editar
-        </button>
-
-        <button type="button" class="btn btn-dark" botaoExcluir>
-          Excluir
-        </button>
-      </div>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

@@ -13,19 +13,19 @@ export class PessoaService {
   }
 
   public findAll() : Observable<Pessoa[]> {
-    return this.http.get<Pessoa[]>(this.pessoasUrl);
+    return this.http.get<Pessoa[]>(this.pessoasUrl + 'list');
   }
 
   public save(pessoa : Pessoa) {
-    return this.http.post<Pessoa>(this.pessoasUrl, pessoa);
+    return this.http.post<Pessoa>(this.pessoasUrl + 'save', pessoa);
   }
 
   public delete() {
-    return this.http.delete<Pessoa>(this.pessoasUrl);
+    return this.http.delete<Pessoa>(this.pessoasUrl + 'delete');
   }
 
   public edit(pessoa : Pessoa) {
-    return this.http.put<Pessoa>(this.pessoasUrl, pessoa);
+    return this.http.put<Pessoa>(this.pessoasUrl + 'edit', pessoa);
   }
 
 }
